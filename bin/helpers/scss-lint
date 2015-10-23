@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./bin/helpers/message "SCSS LINT"
+bundle exec scss-lint -c "config/linters/scss-lint.yml" app/assets/stylesheets/**/*.scss

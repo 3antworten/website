@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./bin/helpers/message "RUBOCOP"
+bundle exec rubocop -c "config/linters/rubocop.yml" --rails

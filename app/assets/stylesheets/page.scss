@@ -1,0 +1,21 @@
+// Place all the styles related to the page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero {
+  background-color: white;
+  display: table;
+  height: 450px;
+  width: 100%;
+
+  .row{
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .hero-logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+}

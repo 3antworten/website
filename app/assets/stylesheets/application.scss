@@ -3,6 +3,9 @@
  *= require_self
  */
 
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
 @import 'variables';
 
 @font-face {
@@ -27,4 +30,10 @@ body {
 
 footer {
   text-align: center;
+
+  img {
+    height: 21px;
+    position: relative;
+    top: -2px;
+  }
 }

@@ -8,6 +8,7 @@ gem 'dotenv-rails'
 gem 'delayed_job_active_record', '~> 4.0'
 gem 'simple_form', '~> 3.1'
 gem 'validators', '~> 2.4'
+gem 'turbolinks'
 gem 'actionpack-page_caching', '~> 1.0'
 gem 'actionpack-action_caching', '~> 1.1'
 

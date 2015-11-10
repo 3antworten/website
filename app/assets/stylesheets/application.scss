@@ -38,3 +38,37 @@ footer {
     top: -2px;
   }
 }
+
+.marvel-device {
+  position: relative;
+
+  &.iphone5s {
+    transform: scale(0.3);
+  }
+  &.ipad {
+    transform: scale(0.4);
+  }
+  &.macbook {
+    transform: scale(0.5);
+  }
+}
+
+.devices {
+  &.smartphonetabletdesktop {
+    .iphone5s {
+      top: 296px;
+      left: 267px;
+      z-index: 3;
+    }
+    .ipad {
+      top: -414px;
+      left: 147px;
+      z-index: 1;
+    }
+    .macbook {
+      top: -1142px;
+      left: -242px;
+      z-index: 0;
+    }
+  }
+}

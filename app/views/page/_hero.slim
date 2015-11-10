@@ -1,5 +1,13 @@
-.container.hero
-  .row
-    = image_tag '3antworten-logo.svg',
-                class: 'hero-logo col-xs-12 col-sm-10 col-sm-push-1 img-responsive',
-                alt: '3antworten Logo'
+.hero
+  .container.table-cell-container
+    .row
+      = image_tag '3antworten-logo.svg',
+                  class: 'hero-logo col-sm-10 col-sm-push-1 img-responsive',
+                  alt: '3antworten Logo'
+    .row.subtitle-row
+      .subtitle
+        p
+          | Handcrafted software made with
+          = fa_icon 'heart'
+          | in Berlin.
+        = link_to 'Wow, lemme txt u!', '#', class: 'btn btn-default hero-button'

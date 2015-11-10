@@ -1,14 +1,47 @@
-// Place all the styles related to the page controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  min-height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .navbar-item {
+    text-align: center;
+
+    .navbar-link {
+      border: 1px solid $transparend-navbar-font;
+      border-radius: 3px;
+      color: $transparend-navbar-font;
+      display: block;
+      margin-top: 5px;
+      padding: 5px;
+    }
+  }
+
+  .icon-bar {
+    background-color: $transparend-navbar-font !important;
+  }
+
+  .burger-menu-logo {
+    margin-left: 15px;
+    width: 215px;
+  }
+}
 
 .hero {
   background-color: white;
+  background-image: $hero-background-image;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: table;
   height: 450px;
+  padding: 0 15px;
   width: 100%;
 
-  .row{
+  .table-cell-container {
     display: table-cell;
     vertical-align: middle;
   }
@@ -17,6 +50,44 @@
     display: block;
     margin: 0 auto;
     width: 80%;
+  }
+
+  .subtitle-row {
+    text-align: center;
+
+    .subtitle {
+      margin-bottom: 15px;
+      width: 100%;
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 1.2em;
+      }
+
+      @media (min-width: $screen-md-min) {
+        font-size: 1.5em;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 1.8em;
+      }
+
+      p {
+        display: inline-block;
+        color: $hero-subtitle;
+        text-align: center;
+
+        .fa {
+          color: $highlight-red;
+          margin: 0 7px;
+        }
+      }
+
+      .hero-button {
+        display: inline-block;
+        font-size: 1em;
+        margin: -5px 0 0 10px;
+      }
+    }
   }
 }
 

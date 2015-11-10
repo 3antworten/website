@@ -1,12 +1,13 @@
 /*
- *= require_tree .
  *= require_self
  */
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'font-awesome';
 
 @import 'variables';
+@import 'page';
 
 @font-face {
   font-family: 'raleway-light';

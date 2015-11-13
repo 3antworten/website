@@ -2,8 +2,8 @@
   background-color: white;
   background-image: $hero-background-image;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center 0px;
+  background-size: 100%;
   display: table;
   height: 450px;
   padding: 0 15px;
@@ -52,7 +52,7 @@
 
       .hero-button {
         background-color: transparent;
-        color: $transparent-navbar-font;
+        color: $navbar-text-color;
         display: inline-block;
         font-size: 1em;
         margin: -5px 0 0 10px;

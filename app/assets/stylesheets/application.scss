@@ -41,34 +41,233 @@ footer {
 
 .marvel-device {
   position: relative;
-
-  &.iphone5s {
-    transform: scale(0.3);
-  }
-  &.ipad {
-    transform: scale(0.4);
-  }
-  &.macbook {
-    transform: scale(0.5);
-  }
 }
 
 .devices {
-  &.smartphonetabletdesktop {
-    .iphone5s {
-      top: 296px;
-      left: 267px;
-      z-index: 3;
+
+  .iphone5s,
+  .ipad,
+  .macbook {
+    position: absolute;
+
+    .screen {
+      background-size: cover;
     }
-    .ipad {
-      top: -414px;
-      left: 147px;
-      z-index: 1;
+  }
+
+  &.desktop {
+    height: 172px;
+
+    @media (min-width: $screen-sm-min) {
+      height: 437px;
     }
+
+    @media (min-width: $screen-md-min) {
+      height: 273px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 335px;
+    }
+
     .macbook {
-      top: -1142px;
-      left: -242px;
-      z-index: 0;
+      top: -275px;
+      left: -364px;
+      transform: scale(0.24);
+
+      @media (min-width: $screen-sm-min) {
+        top: -142px;
+        left: -150px;
+        transform: scale(0.605);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -224px;
+        left: -282px;
+        transform: scale(0.38);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -193px;
+        left: -232px;
+        transform: scale(0.465);
+      }
     }
+  }
+
+  &.tabletdesktop,
+  &.smartphonetabletdesktop {
+    height: 144px;
+
+    @media (min-width: $screen-sm-min) {
+      height: 287px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      height: 240px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 287px;
+    }
+
+    .iphone5s {
+      top: -285px;
+      right: -33px;
+      z-index: 3;
+      transform: scale(0.1);
+
+      @media (min-width: $screen-sm-min) {
+        top: -181px;
+        right: 103px;
+        transform: scale(0.2);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -214px;
+        right: 60px;
+        transform: scale(0.166);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -180px;
+        right: 104px;
+        transform: scale(0.2);
+      }
+    }
+
+    .ipad {
+      top: -217px;
+      right: -388px;
+      z-index: 1;
+      transform: scale(0.15);
+
+      @media (min-width: $screen-sm-min) {
+        top: -121px;
+        right: -316px;
+        transform: scale(0.3);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -151px;
+        right: -339px;
+        transform: scale(0.25);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -120px;
+        right: -316px;
+        transform: scale(0.3);
+      }
+    }
+
+    .macbook {
+      top: -289px;
+      left: -390px;
+      transform: scale(0.2);
+      z-index: 0;
+
+      @media (min-width: $screen-sm-min) {
+        top: -217px;
+        left: -271px;
+        transform: scale(0.4);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -240px;
+        left: -311px;
+        transform: scale(0.333);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -217px;
+        left: -271px;
+        transform: scale(0.4);
+      }
+    }
+  }
+
+  &.desktopdesktop {
+    height: 107px;
+
+    @media (min-width: $screen-sm-min) {
+      height: 253px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      height: 145px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 199px;
+    }
+
+    .macbook {
+      top: -308px;
+      transform: scale(0.15);
+
+      @media (min-width: $screen-sm-min) {
+        top: -234px;
+        transform: scale(0.35);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -288px;
+        transform: scale(0.2);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -261px;
+        transform: scale(0.275);
+      }
+    }
+
+    .macbook:nth-of-type(1) {
+      left: -420px;
+
+      @media (min-width: $screen-sm-min) {
+        left: -301px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        left: -361px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        left: -346px;
+      }
+    }
+
+    .macbook:nth-of-type(2) {
+      right: -420px;
+
+      @media (min-width: $screen-sm-min) {
+        right: -301px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        right: -390px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        right: -346px;
+      }
+    }
+  }
+}
+
+.references {
+  .row {
+    margin: 80px 0;
+  }
+
+  .row:nth-child(2n) {
+    > div:nth-of-type(1) {
+      float: right;
+    }
+  }
+
+  p {
+    text-align: justify;
   }
 }

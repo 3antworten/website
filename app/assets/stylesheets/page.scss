@@ -1,19 +1,11 @@
-.navbar {
-  background-color: rgba(255, 255, 255, 0);
-  border: 0;
-  min-height: 40px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-
+@mixin navbar-style($color) {
   .navbar-item {
     text-align: center;
 
     .navbar-link {
-      border: 1px solid $transparend-navbar-font;
+      border: 1px solid $color;
       border-radius: 3px;
-      color: $transparend-navbar-font;
+      color: $color;
       display: block;
       margin-top: 5px;
       padding: 5px;
@@ -21,12 +13,29 @@
   }
 
   .icon-bar {
-    background-color: $transparend-navbar-font !important;
+    background-color: $color !important;
   }
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+  border: 0;
+  min-height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 
   .burger-menu-logo {
     margin-left: 15px;
     width: 215px;
+  }
+
+  @include navbar-style($navbar-font);
+
+  &.above-hero {
+    background-color: rgba(255, 255, 255, 0);
+    @include navbar-style($transparend-navbar-font);
   }
 }
 

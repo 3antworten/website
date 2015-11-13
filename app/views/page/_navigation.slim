@@ -1,16 +1,16 @@
-nav.navbar.navbar-default.above-hero
+nav.navbar.navbar-default
   .container
-    .navbar-header
-      button.navbar-toggle.collapsed type='button' data-toggle='collapse' data-target='#collapsing-navbar' aria-expanded='false'
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      span.article-show-navigation-title.visible-xs
-        = image_tag '3antworten-logo.svg', alt: '3antworten', class: 'burger-menu-logo'
+    .row
+      .navbar-header.col-sm-6
+        button.navbar-toggle.collapsed type='button' data-toggle='collapse' data-target='#collapsing-navbar' aria-expanded='false'
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        span.article-show-navigation-title
+          = image_tag '3antworten-logo.svg', alt: '3antworten', class: 'burger-menu-logo'
 
-    .collapse.navbar-collapse#collapsing-navbar
-      .row
-        .col-sm-2.col-sm-offset-6.navbar-item
+      .collapse.navbar-collapse#collapsing-navbar
+        .col-sm-2.navbar-item
           = link_to 'References', '#references', class: 'navbar-link'
         .col-sm-2.navbar-item
           = link_to 'Testimonies', '#testimonies', class: 'navbar-link'

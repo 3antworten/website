@@ -1,0 +1,122 @@
+@mixin navbar-style($color, $animation-enabled) {
+  .article-show-navigation-title {
+    @if $animation-enabled == 'with-animation' {
+      animation: fade-opacity-out $navbar-animation-duration;
+    }
+    opacity: 0;
+    &.visible {
+      @if $animation-enabled == 'with-animation' {
+        animation: fade-opacity-in $navbar-animation-duration;
+      }
+      opacity: 1;
+    }
+  }
+
+  .navbar-item {
+    text-align: center;
+
+    .navbar-link {
+      @if $color == $transparent-navbar-font {
+        @if $animation-enabled == 'with-animation' {
+          animation: navbar-items-will-be-above-hero $navbar-animation-duration;
+        }
+
+      } @else {
+        animation: navbar-items-will-be-below-hero $navbar-animation-duration;
+      }
+      border: 1px solid $transparent-navbar-font;
+      border-radius: 3px;
+      color: $color;
+      display: block;
+      margin-top: 9px;
+      padding: 5px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .navbar-link-above-hero:hover {
+      border-color: $antworten-green;
+      color: $antworten-green;
+    }
+
+    .navbar-link-below-hero:hover {
+      border: 1px solid $navbar-font;
+    }
+  }
+
+  .icon-bar {
+    background-color: $color !important;
+  }
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .burger-menu-logo {
+    height: 46px;
+  }
+
+  .navbar-toggle:active,
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: transparent;
+  }
+
+  @include navbar-style($transparent-navbar-font, 'no-animation');
+
+  &.above-hero-again {
+    animation: fade-background-out $navbar-animation-duration;
+  }
+
+  &.below-hero {
+    animation: fade-background-in $navbar-animation-duration;
+    background-color: rgba(255, 255, 255, 1);
+    @include navbar-style($navbar-font, 'with-animation');
+  }
+}
+
+@keyframes fade-opacity-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-opacity-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fade-background-in {
+  0% { background-color: rgba(255, 255, 255, 0); }
+  100% { background-color: rgba(255, 255, 255, 1); }
+}
+
+@keyframes fade-background-out {
+  0% { background-color: rgba(255, 255, 255, 1); }
+  100% { background-color: rgba(255, 255, 255, 0); }
+}
+
+@keyframes navbar-items-will-be-above-hero {
+  0% {
+    color: $navbar-font;
+  }
+  100% {
+    color: $transparent-navbar-font;
+  }
+}
+
+@keyframes navbar-items-will-be-below-hero {
+  0% {
+    color: $transparent-navbar-font;
+  }
+  100% {
+    color: $navbar-font;
+  }
+}

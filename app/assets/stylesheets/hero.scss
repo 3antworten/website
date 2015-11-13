@@ -1,0 +1,67 @@
+.hero {
+  background-color: white;
+  background-image: $hero-background-image;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  height: 450px;
+  padding: 0 15px;
+  width: 100%;
+
+  .table-cell-container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .hero-logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .subtitle-row {
+    text-align: center;
+
+    .subtitle {
+      margin-bottom: 15px;
+      width: 100%;
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 1.2em;
+      }
+
+      @media (min-width: $screen-md-min) {
+        font-size: 1.5em;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 1.8em;
+      }
+
+      p {
+        display: inline-block;
+        color: $hero-subtitle;
+        text-align: center;
+
+        .fa {
+          color: $highlight-red;
+          margin: 0 7px;
+        }
+      }
+
+      .hero-button {
+        background-color: transparent;
+        color: $transparent-navbar-font;
+        display: inline-block;
+        font-size: 1em;
+        margin: -5px 0 0 10px;
+
+        &:hover {
+          border-color: $antworten-green;
+          color: $antworten-green;
+        }
+      }
+    }
+  }
+}

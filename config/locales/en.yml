@@ -20,4 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  lorem: "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  references:
+    live-academy: "The new live-academy website was completely designed and implemented by 3antworten. Besides the fully mobile first and responsive approach a custom content management system was implemented handling miscellaneous assets. 3antworten always tries to handle the client wishes with an agile development process and rapid communication flows."
+    liquidsquare: "Liquidsquare is an order management tool for restaurateurs to communicate with their wholesalers. 3antworten bootstraped the prototype for the minimum viable product which is now developed by Liquidsquare UG (haftungsbeschränkt). The architecture of the product is fully distributed and scale-out ready and uses state-of-the-art caching technologies providing the best user experience. 3antworten always foregrounds the usability of their applications, so that for the Liquidsquare product UX-experts have been mediated."

@@ -36,4 +36,26 @@ footer {
     position: relative;
     top: -2px;
   }
+
+  .col-sm-6 {
+    margin: 15px 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .col-sm-6:nth-of-type(1) {
+      text-align: left;
+    }
+
+    .col-sm-6:nth-of-type(2) {
+      text-align: right;
+    }
+  }
+}
+
+.imprint {
+  text-align: left;
+
+  h2 {
+    font-size: 18px;
+  }
 }

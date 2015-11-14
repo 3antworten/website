@@ -1,6 +1,10 @@
-footer
-  .container
-    p
+footer.container
+  .row
+    .col-xs-12.col-sm-6
+      a data-toggle="modal" data-target="#imprintModal" href="#imprint"
+        | Impressum
+      = render 'page/imprint'
+    .col-xs-12.col-sm-6
       | &copy; 2015&nbsp;
       = image_tag '3antworten-logo.svg', alt: '3antworten'
       | &nbsp;UG (haftungsbeschränkt)

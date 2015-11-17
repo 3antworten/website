@@ -1,31 +1,57 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
+---
 en:
-  lorem: "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  lorem: Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
+    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute
+    iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
+    mollit anim id est laborum.
   references:
-    live-academy: "The new live-academy website was completely designed and implemented by 3antworten. Besides the fully mobile first and responsive approach a custom content management system was implemented handling miscellaneous assets. 3antworten always tries to handle the client wishes with an agile development process and rapid communication flows."
-    liquidsquare: "Liquidsquare is an order management tool for restaurateurs to communicate with their wholesalers. 3antworten bootstraped the prototype for the minimum viable product which is now developed by Liquidsquare UG (haftungsbeschränkt). The architecture of the product is fully distributed and scale-out ready and uses state-of-the-art caching technologies providing the best user experience. 3antworten always foregrounds the usability of their applications, so that for the Liquidsquare product UX-experts have been mediated."
-    booklapp: "Booklapp is a web application which provides the composition of an app with content coming from one or more PDF assets. 3antworten developed this application and always attaches importance to being production ready for any users withouth technology affinities. Therefore the corresponding App Store ready apps are built by the application and can be easily deployed over the air. 3antworten delivered this application pre-installed on tested hardware."
-    bh-taxi: "3antworten has implemented a webapp game for Benson & Hedges. The target platform were desktop and tablet. For the latter, the device's orientation controls the direction of the taxi car, which collects power-ups on the map. The game was produced in the context of Germany's Benson & Hedges consumer platform."
-    camel-festival: "For Camel promotion events on festivals 3antworten has implemented a system to collect user data. The system consists of an iPad app, a Mac app and a server side component. Because of the offline requirement the tablet is able to store user data in an internal database, detects and rejects duplicates intelligently. The Mac app can sync up to 12 iPads with each other to improve the duplication heuristic and sync up all collected data to the server component. The promotion client is able to review collected data and can review the progress of the event. 3antworten always develops with special attention to security, so an end-to-end encryption starting at the user's input and ending at the server's side was implemented to protect the sensitive data."
-    floodfill: "For Germany's Camel consumer platform 3antworten has developed a webapp game for the platforms smartphone, tablet and desktop. The goal of the game is to color all shapes on the canvas, so that no adjacent shapes have the same pattern. The mobile first and responsive webapp uses modern vector technologies for rapid map prototyping."
-
+    bh-taxi:
+      content: 3antworten have realized a web app game for Benson & Hedges. The target
+        platforms are tablets and desktop devices. A taxi cab‘s driving direction
+        is controlled by keyboard and the tablet‘s orientation, respectively. The
+        game was produced in the context of Germany's Benson & Hedges consumer platform.
+      title: Benson & Hedges Taxi Web App
+    booklapp:
+      content: Booklapp is a web application developed by 3antworten. The app allows
+        designing a tablet-app with content coming from PDF files. The corresponding
+        App Store-ready apps are built by Booklapp and can easily be deployed over
+        the air. User-friendliness guarenteed, even for the ones with little tech
+        know-how! 3antworten delivered this application pre-installed on tested hardware.
+      title: Booklapp
+    camel-festival:
+      content: For Camel's promotional campaigns on festivals, 3antworten have implemented
+        a system to collect user data. The system consists of an iPad app, a Mac app
+        and a server side component. The tablet is able to store user data offline
+        in an internal database. The tablet app detects and rejects duplicates intelligently.
+        The Mac app can then synchronize up to 12 iPads with each other to improve
+        the duplication heuristic and sync up all collected data to the server component.
+        Finally the head of the campaign is able to review collected data and the
+        progress of the event. 3antworten always develop with special attention to
+        security. An end-to-endencryption starting with the user's input and ending
+        at the server's side was implemented to protect sensitive data.
+      title: Camel Festival Data Collection
+    floodfill:
+      content: For the German Camel consumer platform 3antworten have developed a
+        web app game for smartphones, tablets and desktop computers. The goal of the
+        game is to color different shapes on a canvas so that no adjacent shapes have
+        the same pattern. This mobile first and responsive webapp uses modern vector
+        technologies for rapid map prototyping.
+      title: Camel Floodfill
+    liquidsquare:
+      content: Liquidsquare is an order management tool for restaurateurs to communicate
+        with their wholesalers. 3antworten bootstrapped the prototype for the minimum
+        viable product which is now developed by Liquidsquare UG (haftungsbeschränkt).
+        The architecture of the product is fully distributed and scale-out ready.
+        State-of-the-art caching technologies are being used providing the best possible
+        user experience. Because 3antworten always foreground the usability of their
+        applications, UX-experts were engaged for the Liquidsquare product.
+      title: Liquidsquare
+    live-academy:
+      content: The live-academy website was designed and implemented entirely by 3antworten.
+        Besides the fully mobile first and responsive approach a custom content management
+        system was implemented handling miscellaneous assets. 3antworten always try
+        to handle the clients' wishes with an agile development process and a swift
+        communication flow.
+      title: Live Academy

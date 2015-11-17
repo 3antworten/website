@@ -1,0 +1,35 @@
+footer {
+  text-align: center;
+
+  img {
+    height: 21px;
+    position: relative;
+    top: -2px;
+  }
+
+  .col-sm-6 {
+    margin: 15px 0;
+  }
+
+  .col-xs-12:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .col-sm-6:first-of-type {
+      text-align: left;
+    }
+
+    .col-sm-6:last-of-type {
+      text-align: right;
+    }
+  }
+}
+
+.imprint {
+  text-align: left;
+
+  h2 {
+    font-size: 18px;
+  }
+}

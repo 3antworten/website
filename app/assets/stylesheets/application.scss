@@ -1,5 +1,4 @@
 /*
- *= require_tree .
  *= require_self
  */
 
@@ -7,6 +6,8 @@
 @import 'bootstrap';
 
 @import 'variables';
+@import 'page';
+@import 'footer';
 
 @font-face {
   font-family: 'raleway-light';
@@ -23,39 +24,16 @@
 
 body {
   background-color: $page-background;
+  color: $text-color;
   font-family: 'raleway-light', Raleway, sans-serif;
   font-weight: 300;
   margin: 0;
 }
 
-footer {
-  text-align: center;
+a {
+  color: $text-color;
 
-  img {
-    height: 21px;
-    position: relative;
-    top: -2px;
-  }
-
-  .col-sm-6 {
-    margin: 15px 0;
-  }
-
-  @media (min-width: $screen-sm-min) {
-    .col-sm-6:nth-of-type(1) {
-      text-align: left;
-    }
-
-    .col-sm-6:nth-of-type(2) {
-      text-align: right;
-    }
-  }
-}
-
-.imprint {
-  text-align: left;
-
-  h2 {
-    font-size: 18px;
+  &:hover {
+    color: $text-color;
   }
 }

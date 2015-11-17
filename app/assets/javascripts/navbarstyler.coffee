@@ -24,7 +24,7 @@ class NavbarStyler
 
     $('#collapsing-navbar').on 'shown.bs.collapse', ->
       _this.navbarHeight = $('nav.navbar').height()
-      recalculateNavbarImagePosition()
+      recalculateNavbarImagePosition(true)
 
     $(window).scroll (e) ->
       _this.scrollTop = $(window).scrollTop()
@@ -33,10 +33,16 @@ class NavbarStyler
     $(window).resize () =>
       fixNavbarBlurImageSize()
 
-  recalculateNavbarImagePosition = () ->
+  recalculateNavbarImagePosition = (checkTotalHeight) ->
+    checkTotalHeight = false if typeof(checkTotalHeight) == 'undefined'
     currentlyBelowHero =  _this.scrollTop > (_this.heroHeight - _this.navbarHeight)
-    targetPosition = 'center -' + _this.scrollTop + 'px'
-    $('.navbar').css('background-position', targetPosition) if !currentlyBelowHero
+
+    if currentlyBelowHero && checkTotalHeight
+      targetPosition = 'center bottom'
+    else if !currentlyBelowHero
+      targetPosition = 'center -' + _this.scrollTop + 'px'
+
+    $('.navbar').css('background-position', targetPosition) if !currentlyBelowHero || checkTotalHeight
 
     if _this.isNavbarBelowHero != currentlyBelowHero
       $('.article-show-navigation-title').toggleClass('visible')

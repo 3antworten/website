@@ -4,10 +4,12 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'devices';
 
 @import 'variables';
 @import 'page';
 @import 'footer';
+@import 'references';
 
 @font-face {
   font-family: 'raleway-light';
@@ -36,4 +38,8 @@ a {
   &:hover {
     color: $text-color;
   }
+}
+
+.marvel-device {
+  position: relative;
 }

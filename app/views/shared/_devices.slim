@@ -1,0 +1,18 @@
+ruby:
+  devices_type_class = ''
+  devices_type_class += 'smartphone' if defined?(smartphone)
+  devices_type_class += 'tablet' if defined?(tablet)
+  if defined?(desktop)
+    desktop = [desktop] unless desktop.is_a?(Array)
+    desktop.each do |d|
+      devices_type_class += 'desktop'
+    end
+  end
+
+
+.devices class="#{devices_type_class}"
+  = render 'shared/smartphone', content: smartphone if defined?(smartphone)
+  = render 'shared/tablet', content: tablet if defined?(tablet)
+  - if defined?(desktop)
+    - desktop.each do |d|
+      = render 'shared/desktop', content: d

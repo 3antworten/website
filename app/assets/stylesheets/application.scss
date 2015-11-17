@@ -44,7 +44,6 @@ footer {
 }
 
 .devices {
-
   .iphone5s,
   .ipad,
   .macbook {
@@ -187,7 +186,7 @@ footer {
     }
   }
 
-  &.desktopdesktop {
+  &.tabletdesktopdesktop {
     height: 107px;
 
     @media (min-width: $screen-sm-min) {
@@ -202,6 +201,31 @@ footer {
       height: 199px;
     }
 
+    .ipad {
+      top: -254px;
+      right: -326px;
+      z-index: 1;
+      transform: scale(0.15);
+
+      @media (min-width: $screen-sm-min) {
+        top: -155px;
+        right: -114px;
+        transform: scale(0.3);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -100px;
+        right: -181px;
+        transform: scale(0.25);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -112px;
+        right: -120px;
+        transform: scale(0.3);
+      }
+    }
+
     .macbook {
       top: -308px;
       transform: scale(0.15);
@@ -212,17 +236,17 @@ footer {
       }
 
       @media (min-width: $screen-md-min) {
-        top: -288px;
-        transform: scale(0.2);
+        top: -208px;
+        transform: scale(0.333);
       }
 
       @media (min-width: $screen-lg-min) {
-        top: -261px;
-        transform: scale(0.275);
+        top: -208px;
+        transform: scale(0.4);
       }
     }
 
-    .macbook:nth-of-type(1) {
+    .macbook:nth-of-type(2) {
       left: -420px;
 
       @media (min-width: $screen-sm-min) {
@@ -230,15 +254,17 @@ footer {
       }
 
       @media (min-width: $screen-md-min) {
-        left: -361px;
+        left: -311px;
+        top: -214px;
       }
 
       @media (min-width: $screen-lg-min) {
-        left: -346px;
+        top: -239px;
+        left: -271px;
       }
     }
 
-    .macbook:nth-of-type(2) {
+    .macbook:nth-of-type(3) {
       right: -420px;
 
       @media (min-width: $screen-sm-min) {
@@ -246,11 +272,13 @@ footer {
       }
 
       @media (min-width: $screen-md-min) {
-        right: -390px;
+        top: -189px;
+        right: -312px;
       }
 
       @media (min-width: $screen-lg-min) {
-        right: -346px;
+        top: -209px;
+        right: -272px;
       }
     }
   }

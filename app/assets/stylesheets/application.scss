@@ -1,10 +1,11 @@
 /*
- *= require_tree .
  *= require_self
  */
 
 @import 'bootstrap';
 @import 'variables';
+@import 'page';
+@import 'footer';
 
 @font-face {
   font-family: 'raleway-light';
@@ -21,17 +22,16 @@
 
 body {
   background-color: $page-background;
+  color: $text-color;
   font-family: 'raleway-light', Raleway, sans-serif;
   font-weight: 300;
   margin: 0;
 }
 
-footer {
-  text-align: center;
+a {
+  color: $text-color;
 
-  img {
-    height: 21px;
-    position: relative;
-    top: -2px;
+  &:hover {
+    color: $text-color;
   }
 }

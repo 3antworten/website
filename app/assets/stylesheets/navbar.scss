@@ -32,8 +32,11 @@
   }
 
   .article-show-navigation-title {
-    animation: fade-opacity-out $navbar-animation-duration;
     opacity: 0;
+
+    &.above-hero-again {
+      animation: fade-opacity-out $navbar-animation-duration;
+    }
 
     &.visible {
       animation: fade-opacity-in $navbar-animation-duration;

@@ -26,6 +26,7 @@ gem 'fastclick-rails', '~> 1.0'
 gem 'font-awesome-rails'
 #
 gem 'kramdown-rails'
+gem 'fastimage'
 
 group :development, :test do
   gem 'i18n-tasks', '~> 0.8'

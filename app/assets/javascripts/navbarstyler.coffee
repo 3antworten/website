@@ -5,7 +5,15 @@ class NavbarStyler
     @heroHeight = $('.hero').height()
     @aboveHeroAgain = false
     @isNavbarBelowHero = false
+    @backgroundImageSizeIsFixed = false
+
+    backgroundImageWidth = $('.hero').data('background-width')
+    backgroundImageHeight = $('.hero').data('background-height')
+    @backgroundMinCoverWidth = (backgroundImageWidth / backgroundImageHeight) * @heroHeight
+
+    # apply mechanics initially
     setClasses(false)
+    fixNavbarBlurImageSize()
 
     $(window).scroll (e) =>
       scrollTop = $(window).scrollTop()
@@ -16,16 +24,29 @@ class NavbarStyler
 
       # prevent animation for the first time (e.g. page reload)
       if !@aboveHeroAgain && !currentlyBelowHero && @isNavbarBelowHero
-        $('nav.navbar').addClass('above-hero-again')
+        $('.article-show-navigation-title').addClass('above-hero-again')
         @aboveHeroAgain = true
 
       if @isNavbarBelowHero != currentlyBelowHero
         setClasses(currentlyBelowHero)
         @isNavbarBelowHero = currentlyBelowHero
 
+    $(window).resize () =>
+      fixNavbarBlurImageSize()
+
   setClasses = (belowHero) ->
     # toggle logo visibility
     $('.article-show-navigation-title').addClass('visible') if belowHero
     $('.article-show-navigation-title').removeClass('visible') if !belowHero
+
+  fixNavbarBlurImageSize = () ->
+    fix_background_size = $(window).width() < @backgroundMinCoverWidth
+    if fix_background_size && !@backgroundImageSizeIsFixed
+      $('.navbar').css('background-size', @backgroundMinCoverWidth + 'px ' + @heroHeight + 'px')
+      @backgroundImageSizeIsFixed = true
+    else if !fix_background_size && @backgroundImageSizeIsFixed
+      $('.navbar').css('background-size', 'cover')
+      @backgroundImageSizeIsFixed = false
+
 
 window.NavbarStyler = NavbarStyler()

@@ -1,5 +1,14 @@
-.container.hero
-  .row
-    = image_tag '3antworten-logo.svg',
-                class: 'hero-logo col-xs-12 col-sm-10 col-sm-push-1 img-responsive',
-                alt: '3antworten Logo'
+.hero data-background-width="#{@background_image_size.first}" data-background-height="#{@background_image_size.second}"
+  .container.table-cell-container
+    .row
+      .col-xs-12
+        = image_tag '3antworten-logo.svg',
+                    class: 'hero-logo col-sm-10 col-sm-push-1 img-responsive',
+                    alt: '3antworten Logo'
+    .row.subtitle-row
+      .col-xs-12.subtitle
+        p
+          | Handcrafted software made with
+          = fa_icon 'heart'
+          | in Berlin.
+        = link_to 'Get in touch', '#contact', class: 'btn btn-default hero-button'

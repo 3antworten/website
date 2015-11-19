@@ -5,11 +5,14 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'devices';
+@import 'font-awesome';
 
 @import 'variables';
 @import 'page';
 @import 'footer';
 @import 'references';
+@import 'navbar';
+@import 'hero';
 
 @font-face {
   font-family: 'raleway-light';

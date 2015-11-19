@@ -23,9 +23,10 @@ gem 'jquery-rails', '~> 4.0'
 gem 'uglifier', '~> 2.7'
 gem 'slim-rails', '~> 3.0'
 gem 'fastclick-rails', '~> 1.0'
-gem 'font-awesome-sass', '~> 4.3'
+gem 'font-awesome-rails'
 #
 gem 'kramdown-rails'
+gem 'fastimage'
 
 group :development, :test do
   gem 'i18n-tasks', '~> 0.8'

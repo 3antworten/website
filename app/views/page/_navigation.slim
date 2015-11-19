@@ -1,0 +1,18 @@
+nav.navbar.navbar-default
+  .container
+    .row
+      .navbar-header.col-sm-6
+        button.navbar-toggle.collapsed type='button' data-toggle='collapse' data-target='#collapsing-navbar' aria-expanded='false'
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        span.article-show-navigation-title
+          = image_tag '3antworten-logo-white.svg', alt: '3antworten', class: 'burger-menu-logo'
+
+      .collapse.navbar-collapse#collapsing-navbar
+        .col-sm-2.navbar-item
+          = link_to 'References', '#references', class: 'navbar-link'
+        .col-sm-2.navbar-item
+          = link_to 'Testimonies', '#testimonies', class: 'navbar-link'
+        .col-sm-2.navbar-item
+          = link_to 'Legitimizer', '#legitimizer', class: 'navbar-link'

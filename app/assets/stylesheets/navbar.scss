@@ -1,0 +1,78 @@
+.navbar {
+  background-color: $antworten-gray;
+  background-image: $hero-background-image-blur;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-size: 100%;
+  background-attachment: scroll;
+  border: 0;
+  border-radius: 0;
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  .burger-menu-logo {
+    height: 46px;
+  }
+
+  .navbar-toggle:active,
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: transparent;
+  }
+
+  .navbar-collapse.collapse.in {
+    padding-bottom: 12px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-bottom: 0;
+    }
+  }
+
+  .article-show-navigation-title {
+    opacity: 0;
+
+    &.above-hero-again {
+      animation: fade-opacity-out $navbar-animation-duration;
+    }
+
+    &.visible {
+      animation: fade-opacity-in $navbar-animation-duration;
+      opacity: 1;
+    }
+  }
+
+  .navbar-item {
+    text-align: center;
+
+    .navbar-link {
+      border: 1px solid transparent;
+      border-radius: 3px;
+      color: $navbar-text-color;
+      display: block;
+      margin-top: 9px;
+      padding: 5px;
+
+      &:hover {
+        border: 1px solid $navbar-text-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .icon-bar {
+    background-color: $navbar-text-color !important;
+  }
+}
+
+@keyframes fade-opacity-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-opacity-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

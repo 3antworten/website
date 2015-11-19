@@ -10,41 +10,41 @@
   }
 
   &.desktop {
-    height: 172px;
+    height: 157px;
 
     @media (min-width: $screen-sm-min) {
-      height: 437px;
+      height: 417px;
     }
 
     @media (min-width: $screen-md-min) {
-      height: 273px;
+      height: 267px;
     }
 
     @media (min-width: $screen-lg-min) {
-      height: 335px;
+      height: 327px;
     }
 
     .macbook {
-      top: -275px;
-      left: -364px;
-      transform: scale(0.24);
+      top: -282px;
+      left: -379px;
+      transform: scale(0.219);
 
       @media (min-width: $screen-sm-min) {
-        top: -142px;
-        left: -150px;
-        transform: scale(0.605);
+        top: -152px;
+        left: -164px;
+        transform: scale(0.58);
       }
 
       @media (min-width: $screen-md-min) {
-        top: -224px;
-        left: -282px;
-        transform: scale(0.38);
+        top: -227px;
+        left: -289px;
+        transform: scale(0.37);
       }
 
       @media (min-width: $screen-lg-min) {
-        top: -193px;
-        left: -232px;
-        transform: scale(0.465);
+        top: -197px;
+        left: -239px;
+        transform: scale(0.454);
       }
     }
   }
@@ -149,11 +149,11 @@
     }
 
     @media (min-width: $screen-md-min) {
-      height: 145px;
+      height: 266px;
     }
 
     @media (min-width: $screen-lg-min) {
-      height: 199px;
+      height: 318px;
     }
 
     .ipad {
@@ -169,13 +169,13 @@
       }
 
       @media (min-width: $screen-md-min) {
-        top: -80px;
+        top: -126px;
         right: -181px;
         transform: scale(0.25);
       }
 
       @media (min-width: $screen-lg-min) {
-        top: -82px;
+        top: -90px;
         right: -120px;
         transform: scale(0.3);
       }
@@ -207,12 +207,12 @@
       }
 
       @media (min-width: $screen-md-min) {
-        top: -194px;
+        top: -240px;
         left: -311px;
       }
 
       @media (min-width: $screen-lg-min) {
-        top: -209px;
+        top: -217px;
         left: -271px;
       }
     }
@@ -225,12 +225,12 @@
       }
 
       @media (min-width: $screen-md-min) {
-        top: -169px;
+        top: -215px;
         right: -312px;
       }
 
       @media (min-width: $screen-lg-min) {
-        top: -179px;
+        top: -187px;
         right: -272px;
       }
     }

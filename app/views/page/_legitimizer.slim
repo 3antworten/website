@@ -1,7 +1,10 @@
-.container.legitimizer#legitimizer
-  .row
-    .col-xs-12
-      .well
-        | Other cool logos:
+.legitimizer#legitimizer
+  .container
+    .row
+      .col-xs-12
+        h2.partial-heading = t('legitimizer.heading')
+  .container-fluid
+    .row
+      .col-xs-12
         - %w(bbc betabeat business-insider cnn economist harvard huff newyorktimes techcrunch ted tnw wired wsj).each do |logo|
           = image_tag "legitimizer/#{logo}.png"

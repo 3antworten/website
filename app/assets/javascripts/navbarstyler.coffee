@@ -4,10 +4,12 @@ class NavbarStyler
 
   constructor: ->
     _this.navbarHeight = $('nav.navbar').height()
+    _this.estimatedDecollapsedNavbarHeight = 186
     _this.heroHeight = $('.hero').height()
     _this.scrollTop = $(window).scrollTop()
     _this.aboveHeroAgain = false
     _this.isNavbarBelowHero = false
+    _this.burgerMenuIsCollapsed = true
     _this.backgroundImageSizeIsFixed = false
 
     imageWidth = $('.hero').data('background-width')
@@ -16,34 +18,44 @@ class NavbarStyler
 
     # apply mechanics initially
     fixNavbarBlurImageSize()
-    recalculateNavbarImagePosition()
+    recalculateNavbarImagePosition(false, false)
+
+    $('.navbar-toggle.collapsed').on 'click', ->
+      recalculateNavbarImagePosition(true, false)
 
     $('#collapsing-navbar').on 'hidden.bs.collapse', ->
       _this.navbarHeight = $('nav.navbar').height()
-      recalculateNavbarImagePosition()
+      _this.burgerMenuIsCollapsed = true
+      recalculateNavbarImagePosition(false, false)
 
     $('#collapsing-navbar').on 'shown.bs.collapse', ->
       _this.navbarHeight = $('nav.navbar').height()
-      recalculateNavbarImagePosition(true)
+      _this.burgerMenuIsCollapsed = false
+      recalculateNavbarImagePosition(false, true)
 
     $(window).scroll (e) ->
       _this.scrollTop = $(window).scrollTop()
-      recalculateNavbarImagePosition()
+      recalculateNavbarImagePosition(false, false)
 
     $(window).resize () =>
       fixNavbarBlurImageSize()
 
-  recalculateNavbarImagePosition = (checkTotalHeight) ->
-    checkTotalHeight = false if typeof(checkTotalHeight) == 'undefined'
+  recalculateNavbarImagePosition = (burgerButtonClicked, checkTotalHeight) ->
     currentlyBelowHero =  _this.scrollTop > (_this.heroHeight - _this.navbarHeight)
 
-    if currentlyBelowHero && checkTotalHeight
-      targetPosition = 'center bottom'
-    else if !currentlyBelowHero
-      targetPosition = 'center -' + _this.scrollTop + 'px'
+    # (re)position background image
+    if currentlyBelowHero
+      if burgerButtonClicked && _this.burgerMenuIsCollapsed || checkTotalHeight
+        $('.navbar').css('background-position', 'center bottom')
+    else
+      if burgerButtonClicked
+        if _this.scrollTop > (_this.heroHeight - _this.estimatedDecollapsedNavbarHeight)
+          targetPosition = 'center bottom'
+      else
+        targetPosition = 'center -' + _this.scrollTop + 'px'
+      $('.navbar').css('background-position', targetPosition)
 
-    $('.navbar').css('background-position', targetPosition) if !currentlyBelowHero || checkTotalHeight
-
+    # toggle navbar logo
     if _this.isNavbarBelowHero != currentlyBelowHero
       $('.article-show-navigation-title').toggleClass('visible')
       _this.isNavbarBelowHero = currentlyBelowHero

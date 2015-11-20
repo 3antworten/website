@@ -1,0 +1,39 @@
+ruby:
+  message = "Hi 3antworten,\n\n" \
+            "we want tell you about our project ...\n" \
+            "You can find our current state here ...\n" \
+            "How do we go on from here?\n\n" \
+            "Best,\n" \
+            "John Doe"
+.contact.modal.fade#contactModal tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times
+        h4#contactModalLabel.modal-title
+          | Contact
+      .modal-body
+        .row
+          .col-xs-12
+            = simple_form_for :contact,
+                              url: contact_path do |f|#,
+#                              remote: true do |f|
+              = f.input :to,
+                        required: false,
+                        input_html: { value: 'hello@3antworten.de',
+                                      readonly: 'readonly' }
+              = f.input :from,
+                        input_html: { placeholder: 'John Doe',
+                                      required: nil }
+              = f.input :email,
+                        input_html: { type: 'email', placeholder: 'john.doe@example.com' }
+              = f.input :message,
+                        as: 'text',
+                        input_html: { value: message,
+                                      rows: 10 }
+              .text-right
+                button.btn.btn-primary type="submit"
+                  = fa_icon('paper-plane')
+                  | &nbsp;Send

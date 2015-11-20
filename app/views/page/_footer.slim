@@ -5,6 +5,7 @@ footer.container
       = image_tag '3antworten-logo.svg', alt: '3antworten'
       | &nbsp;UG (haftungsbeschränkt)
     .col-xs-12.col-sm-6
+      a data-toggle="modal" data-target="#contactModal" href="#imprint"
+        | Contact
       a data-toggle="modal" data-target="#imprintModal" href="#imprint"
         | Impressum
-      = render 'page/imprint'

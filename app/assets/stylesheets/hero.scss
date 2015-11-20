@@ -50,18 +50,9 @@
       }
 
       .hero-button {
-        background-color: $antworten-green;
-        border: 1px solid darken($antworten-green, 5);
-        color: $navbar-text-color;
         display: inline-block;
         font-size: 1em;
-        font-weight: bold;
         margin: -5px 0 0 10px;
-
-        &:hover {
-          background-color: darken($antworten-green, 5);
-          border: 1px solid darken($antworten-green, 7);
-        }
       }
     }
   }

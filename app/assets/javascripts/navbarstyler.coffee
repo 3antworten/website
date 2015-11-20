@@ -9,7 +9,6 @@ class NavbarStyler
     _this.scrollTop = $(window).scrollTop()
     _this.aboveHeroAgain = false
     _this.isNavbarBelowHero = false
-    _this.burgerMenuIsCollapsed = true
     _this.backgroundImageSizeIsFixed = false
 
     imageWidth = $('.hero').data('background-width')
@@ -18,35 +17,34 @@ class NavbarStyler
 
     # apply mechanics initially
     fixNavbarBlurImageSize()
-    recalculateNavbarImagePosition(false, false)
+    recalculateNavbarImagePosition(false)
 
     $('.navbar-toggle.collapsed').on 'click', ->
-      recalculateNavbarImagePosition(true, false)
+      recalculateNavbarImagePosition(true)
 
     $('#collapsing-navbar').on 'hidden.bs.collapse', ->
       _this.navbarHeight = $('nav.navbar').height()
-      _this.burgerMenuIsCollapsed = true
-      recalculateNavbarImagePosition(false, false)
+      # _this.burgerMenuIsCollapsed = true
+      recalculateNavbarImagePosition(false)
 
     $('#collapsing-navbar').on 'shown.bs.collapse', ->
       _this.navbarHeight = $('nav.navbar').height()
-      _this.burgerMenuIsCollapsed = false
-      recalculateNavbarImagePosition(false, true)
+      # _this.burgerMenuIsCollapsed = false
+      recalculateNavbarImagePosition(false)
 
     $(window).scroll (e) ->
       _this.scrollTop = $(window).scrollTop()
-      recalculateNavbarImagePosition(false, false)
+      recalculateNavbarImagePosition(false)
 
     $(window).resize () =>
       fixNavbarBlurImageSize()
 
-  recalculateNavbarImagePosition = (burgerButtonClicked, checkTotalHeight) ->
+  recalculateNavbarImagePosition = (burgerButtonClicked) ->
     currentlyBelowHero =  _this.scrollTop > (_this.heroHeight - _this.navbarHeight)
 
     # (re)position background image
     if currentlyBelowHero
-      if burgerButtonClicked && _this.burgerMenuIsCollapsed || checkTotalHeight
-        $('.navbar').css('background-position', 'center bottom')
+      $('.navbar').css('background-position', 'center bottom')
     else
       if burgerButtonClicked
         if _this.scrollTop > (_this.heroHeight - _this.estimatedDecollapsedNavbarHeight)
@@ -73,6 +71,5 @@ class NavbarStyler
     else if !fix_background_size && _this.backgroundImageSizeIsFixed
       $('.navbar').css('background-size', 'cover')
       _this.backgroundImageSizeIsFixed = false
-
 
 window.NavbarStyler = NavbarStyler()

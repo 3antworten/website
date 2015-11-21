@@ -56,3 +56,6 @@ en:
         to handle the clients' wishes with an agile development process and a swift
         communication flow.
       title: Live Academy
+  contact:
+    default-message: "Hi 3antworten,\n\nwe want tell you about our project ...\nYou can find our current state here ...\nHow do we go on from here?\n\nBest,\nJohn Doe"
+    success: 'Your contact request has been successfully sent. Thank you for your interest in 3antworten.'

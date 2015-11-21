@@ -13,6 +13,7 @@
 @import 'references';
 @import 'navbar';
 @import 'hero';
+@import 'contact';
 
 @font-face {
   font-family: 'raleway-light';
@@ -65,4 +66,11 @@ textarea {
 
 [title='required'] {
   display: none;
+}
+
+input,
+textarea {
+  &.error {
+    border: 1px solid $error-red;
+  }
 }

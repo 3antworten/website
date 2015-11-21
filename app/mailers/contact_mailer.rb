@@ -1,11 +1,11 @@
 class ContactMailer < ApplicationMailer
   layout 'mailer'
-  def contact_mail(params)
-    @message = params[:message]
+  def contact_mail(contact)
+    @contact = contact
     mail(
       to: 'hello@3antworten.de',
-      from: params[:email],
-      subject: "Contact request from #{params[:from]}"
+      from: @contact.email,
+      subject: "Contact request from #{@contact.from}"
     )
   end
 end

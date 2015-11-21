@@ -12,6 +12,10 @@ en:
       John Doe
     success: Your contact request has been successfully sent. Thank you for your interest
       in 3antworten.
+  footer:
+    contact-button: Wow, I definitely want to work with you!
+  legitimizer:
+    heading: We absolutely could have been featured in all of those news networks
   lorem: Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
     incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute
@@ -57,6 +61,7 @@ en:
         modern vector technologies for rapid map prototyping represents 3antworten's
         development credo.
       title: Camel Floodfill
+    heading: Your daily new, random mix of 3antworten's references
     liquidsquare:
       content: Liquidsquare is an order management tool for restaurateurs to communicate
         with their wholesalers. 3antworten bootstrapped the prototype for the minimum
@@ -74,3 +79,6 @@ en:
         to handle the clients' wishes with an agile development process and a swift
         communication flow.
       title: Live Academy
+  testimonies:
+    heading: But don't trust us, ask our testimonies about the marks of awesomeness
+      we left

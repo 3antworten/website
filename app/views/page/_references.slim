@@ -1,12 +1,15 @@
 .container.references#references
   .row
+    .col-xs-12
+      h2.partial-heading = t('references.heading')
+  .row
     .col-xs-12.col-md-6
       = render 'shared/devices',
                smartphone: asset_path('references/live-academy/smartphone.png'),
                tablet: asset_path('references/live-academy/tablet.png'),
                desktop: asset_path('references/live-academy/desktop.png')
     .col-xs-12.col-md-6
-      h2
+      h3
         = t('references.live-academy.title')
       p
         = t('references.live-academy.content')
@@ -17,7 +20,7 @@
                tablet: asset_path('references/liquidsquare/tablet.png'),
                desktop: asset_path('references/liquidsquare/desktop.png')
     .col-xs-12.col-md-6
-      h2
+      h3
         = t('references.liquidsquare.title')
       p
         = t('references.liquidsquare.content')
@@ -26,7 +29,7 @@
       = render 'shared/devices',
                desktop: asset_path('references/booklapp/desktop.png')
     .col-xs-12.col-md-6
-      h2
+      h3
         = t('references.booklapp.title')
       p
         = t('references.booklapp.content')
@@ -36,7 +39,7 @@
                tablet: asset_path('references/bh-taxi/tablet.png'),
                desktop: asset_path('references/bh-taxi/desktop.png')
     .col-xs-12.col-md-6
-      h2
+      h3
         = t('references.bh-taxi.title')
       p
         = t('references.bh-taxi.content')
@@ -47,7 +50,7 @@
                desktop: [asset_path('references/camel-festival/server.png'),
                          asset_path('references/camel-festival/desktop.png')]
     .col-xs-12.col-md-6
-      h2
+      h3
         = t('references.camel-festival.title')
       p
         = t('references.camel-festival.content')
@@ -58,7 +61,7 @@
                tablet: asset_path('references/floodfill/tablet.png'),
                desktop: asset_path('references/floodfill/desktop.png')
     .col-xs-12.col-md-6
-      h2
+      h3
         = t('references.floodfill.title')
       p
         = t('references.floodfill.content')

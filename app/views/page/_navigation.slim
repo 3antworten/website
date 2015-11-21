@@ -12,7 +12,10 @@ nav.navbar.navbar-default
       .collapse.navbar-collapse#collapsing-navbar
         .col-sm-2.navbar-item
           = link_to 'References', '#references', class: 'navbar-link'
-        .col-sm-2.navbar-item
-          = link_to 'Testimonies', '#testimonies', class: 'navbar-link'
+        / .col-sm-2.navbar-item
+        /   = link_to 'Testimonies', '#testimonies', class: 'navbar-link'
         .col-sm-2.navbar-item
           = link_to 'Legitimizer', '#legitimizer', class: 'navbar-link'
+        .col-sm-2.navbar-item
+          a.navbar-link data-toggle="modal" data-target="#contactModal" href="#contact"
+            | Contact

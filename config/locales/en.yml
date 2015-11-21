@@ -1,5 +1,9 @@
 ---
 en:
+  footer:
+    contact-button: Wow, I definitely want to work with you!
+  legitimizer:
+    heading: We absolutely could have been featured in all of those news networks
   lorem: Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor
     incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute
@@ -45,7 +49,7 @@ en:
         modern vector technologies for rapid map prototyping represents 3antworten's
         development credo.
       title: Camel Floodfill
-    heading: "Your daily new, random mix of 3antworten's references"
+    heading: Your daily new, random mix of 3antworten's references
     liquidsquare:
       content: Liquidsquare is an order management tool for restaurateurs to communicate
         with their wholesalers. 3antworten bootstrapped the prototype for the minimum
@@ -64,8 +68,5 @@ en:
         communication flow.
       title: Live Academy
   testimonies:
-    heading: "But don't trust us, ask our testimonies about the marks of awesomeness we left"
-  legitimizer:
-    heading: 'We absolutely could have been featured in all of those news networks'
-  footer:
-    contact-button: 'Wow, I definitely want to work with you!'
+    heading: But don't trust us, ask our testimonies about the marks of awesomeness
+      we left

@@ -17,4 +17,5 @@ nav.navbar.navbar-default
         .col-sm-2.navbar-item
           = link_to 'Legitimizer', '#legitimizer', class: 'navbar-link'
         .col-sm-2.navbar-item
-          = link_to 'Contact', '#contact', class: 'navbar-link'
+          a.navbar-link data-toggle="modal" data-target="#contactModal" href="#contact"
+            | Contact

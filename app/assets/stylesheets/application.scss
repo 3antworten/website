@@ -14,6 +14,7 @@
 @import 'legitimizer';
 @import 'navbar';
 @import 'hero';
+@import 'contact';
 
 @font-face {
   font-family: 'raleway-light';
@@ -46,4 +47,38 @@ a {
 
 .marvel-device {
   position: relative;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.btn-primary {
+  background-color: $antworten-green;
+  border: 1px solid darken($antworten-green, 5);
+  font-weight: bold;
+
+  &:hover, &:focus {
+    background-color: darken($antworten-green, 5);
+    border: 1px solid darken($antworten-green, 7);
+  }
+}
+
+[title='required'] {
+  display: none;
+}
+
+input,
+textarea {
+  &.error {
+    border: 1px solid $error-red;
+  }
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: $antworten-green;
+  text-decoration: none
 }

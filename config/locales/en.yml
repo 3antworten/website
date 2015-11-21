@@ -1,5 +1,17 @@
 ---
 en:
+  contact:
+    default-message: |-
+      Hi 3antworten,
+
+      we want tell you about our project ...
+      You can find our current state here ...
+      How do we go on from here?
+
+      Best,
+      John Doe
+    success: Your contact request has been successfully sent. Thank you for your interest
+      in 3antworten.
   footer:
     contact-button: Wow, I definitely want to work with you!
   legitimizer:

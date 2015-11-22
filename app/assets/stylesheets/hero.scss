@@ -12,16 +12,13 @@
   .table-cell-container {
     display: table-cell;
     vertical-align: middle;
-  }
 
-  .hero-logo {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-
-    // @media (min-width: $screen-lg-min) {
-    //   width: 960px;
-    // }
+    .hero-logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 80%;
+    }
   }
 
   .subtitle-row {

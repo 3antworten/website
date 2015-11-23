@@ -27,25 +27,24 @@ en:
       content: 3antworten have realized a web app game for Benson & Hedges. The target
         platforms are tablets and desktop devices. A taxi cab‘s driving direction
         is controlled by keyboard and the tablet‘s orientation, respectively. 3antworten
-        always assures a natural and playful gaming experience. The game was produced
+        always assure a natural and playful gaming experience. The game was produced
         in the context of Germany's Benson & Hedges consumer platform.
       title: Benson & Hedges Taxi Web App
     booklapp:
       content: Booklapp is a web application developed by 3antworten. The app allows
-        designing a tablet-app with content coming from PDF files. These files can
-        even originally be designed for prepress. a book or magazine. The corresponding
-        App Store-ready apps are built by Booklapp and can easily be deployed over
-        the air. 3antworten always cares about user-friendliness, even for the ones
-        with little tech know-how! 3antworten delivered this application pre-installed
-        on tested hardware.
+        designing a tablet app with content coming from PDF files. These files can
+        even be designed for prepress. The corresponding App Store-ready apps are
+        built by Booklapp and can easily be deployed over the air. 3antworten always
+        care about user-friendliness, even for the ones with little tech know-how!
+        3antworten delivered this application pre-installed on tested hardware.
       title: Booklapp
     camel-festival:
       content: For Camel's promotional campaigns on festivals, 3antworten have implemented
         a system to onboard new users to the digital Camel community. The system consists
         of an iPad app, a Mac app and a server side component. The tablet is able
         to store user data offline in an internal database. The tablet app detects
-        and rejects duplicates intelligently - even across multiple devices. The Mac
-        app can then synchronize all the used iPads with each other to improve the
+        and rejects duplicates intelligently – even across multiple devices. The Mac
+        app can then synchronize all deployed iPads with each other to improve the
         duplication heuristic, save all collected data locally and sync them up to
         the server component whenever the internet connection is available again.
         Finally the head of the campaign is able to review collected data and the

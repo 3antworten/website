@@ -34,7 +34,6 @@ body {
   color: $text-color;
   font-family: 'raleway-light', Raleway, sans-serif;
   font-weight: 300;
-  margin: 0;
 }
 
 a {
@@ -81,4 +80,8 @@ a:focus,
 a:hover {
   color: $antworten-green;
   text-decoration: none
+}
+
+.content-container {
+  box-shadow: 0px 0px 5px 0px $shadow-color;
 }

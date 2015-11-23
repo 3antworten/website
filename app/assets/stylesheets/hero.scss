@@ -12,36 +12,33 @@
   .table-cell-container {
     display: table-cell;
     vertical-align: middle;
-  }
 
-  .hero-logo {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
+    .hero-logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 80%;
+    }
   }
 
   .subtitle-row {
     text-align: center;
 
     .subtitle {
-      margin-bottom: 15px;
+      font-size: 1.5em;
+      margin-bottom: 15px 0;
       width: 100%;
 
       @media (min-width: $screen-sm-min) {
-        font-size: 1.2em;
-      }
-
-      @media (min-width: $screen-md-min) {
-        font-size: 1.5em;
-      }
-
-      @media (min-width: $screen-lg-min) {
-        font-size: 1.8em;
+        font-size: 2em;
       }
 
       p {
         color: $hero-subtitle;
         text-align: center;
+        text-shadow: 0 0 5px $text-shadow-color;
+        font-weight: bold;
+        margin: 15px 0;
 
         .fa {
           color: $highlight-red;

@@ -7,6 +7,7 @@
   background-attachment: scroll;
   border: 0;
   border-radius: 0;
+  box-shadow: 0px 0px 5px 0px $shadow-color;
   min-height: 50px;
   position: fixed;
   top: 0;
@@ -14,7 +15,8 @@
   z-index: 10;
 
   .burger-menu-logo {
-    height: 46px;
+    margin: 8px 0 0;
+    width: 229px;
   }
 
   .navbar-toggle:active,
@@ -52,10 +54,13 @@
       border-radius: 3px;
       color: $navbar-text-color;
       display: block;
+      font-weight: bold;
       margin-top: 9px;
       padding: 5px;
+      text-shadow: 0 0 10px $text-shadow-color;
 
-      &:hover {
+      &:hover,
+      &:focus {
         border: 1px solid $navbar-text-color;
         text-decoration: none;
       }

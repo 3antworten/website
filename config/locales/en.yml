@@ -23,12 +23,6 @@ en:
     Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
     mollit anim id est laborum.
   references:
-    wiwo-guide:
-      content: For BuckNovak CP PR GmbH commissioned by WirtschaftsWoche, 3antworten has built a highly individual customer relationship management system.
-        It provides an advanced mailing component to communicate quickly with BuckNovak's clients allowing them to update their data very easily and saving a lot of paperwork on both sides.
-        Therefore 3antworten has implemented both a role-base and a token-based login system to maximize the user experience.
-        3antworten cares about homogeneity and reimplemented BuckNovak's website CI seamlessly to maximize the customer's trust through consistency.
-      title: WirtschaftsWoche Guide
     bh-taxi:
       content: 3antworten have realized a web app game for Benson & Hedges. The target
         platforms are tablets and desktop devices. A taxi cab's driving direction
@@ -84,6 +78,16 @@ en:
         to handle the clients' wishes with an agile development process and a swift
         communication flow.
       title: Live Academy
+    wiwo-guide:
+      content: For BuckNovak CP PR GmbH commissioned by WirtschaftsWoche, 3antworten
+        have built a highly individual customer relationship management system. It
+        provides an advanced mailing component to communicate quickly with BuckNovak's
+        clients allowing them to update their data very easily and saving a lot of
+        paperwork on both sides. Therefore 3antworten have implemented both a role-based
+        and a token-based login system to maximize the user experience. 3antworten
+        care about homogeneity and reimplemented BuckNovak's website CI seamlessly
+        to maximize the customer's trust through consistency.
+      title: WirtschaftsWoche Guide
   testimonies:
     heading: But don't trust us, ask our testimonies about the marks of awesomeness
       we left

@@ -4,7 +4,7 @@ en:
     default-message: |-
       Hi 3antworten,
 
-      we want tell you about our project ...
+      we want to tell you about our project ...
       You can find our current state here ...
       How do we go on from here?
 
@@ -25,8 +25,8 @@ en:
   references:
     bh-taxi:
       content: 3antworten have realized a web app game for Benson & Hedges. The target
-        platforms are tablets and desktop devices. A taxi cab‘s driving direction
-        is controlled by keyboard and the tablet‘s orientation, respectively. 3antworten
+        platforms are tablets and desktop devices. A taxi cab's driving direction
+        is controlled by keyboard and the tablet's orientation, respectively. 3antworten
         always assure a natural and playful gaming experience. The game was produced
         in the context of Germany's Benson & Hedges consumer platform.
       title: Benson & Hedges Taxi Web App
@@ -78,6 +78,16 @@ en:
         to handle the clients' wishes with an agile development process and a swift
         communication flow.
       title: Live Academy
+    wiwo-guide:
+      content: For BuckNovak CP PR GmbH commissioned by WirtschaftsWoche, 3antworten
+        have built a highly individual customer relationship management system. It
+        provides an advanced mailing component to communicate quickly with BuckNovak's
+        clients allowing them to update their data very easily and saving a lot of
+        paperwork on both sides. Therefore 3antworten have implemented both a role-based
+        and a token-based login system to maximize the user experience. 3antworten
+        care about homogeneity and reimplemented BuckNovak's website CI seamlessly
+        to maximize the customer's trust through consistency.
+      title: WirtschaftsWoche Guide
   testimonies:
     heading: But don't trust us, ask our testimonies about the marks of awesomeness
       we left

@@ -141,6 +141,47 @@
     }
   }
 
+  &.tablettablet {
+    height: 144px;
+
+    @media (min-width: $screen-sm-min) {
+      height: 287px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      height: 240px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 287px;
+    }
+
+    .ipad {
+      top: -217px;
+      right: -388px;
+      z-index: 1;
+      transform: scale(0.15);
+
+      @media (min-width: $screen-sm-min) {
+        top: -121px;
+        right: -316px;
+        transform: scale(0.3);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -151px;
+        right: -339px;
+        transform: scale(0.25);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -120px;
+        right: -316px;
+        transform: scale(0.3);
+      }
+    }
+  }
+
   &.tabletdesktopdesktop {
     height: 107px;
 

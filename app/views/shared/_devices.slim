@@ -1,7 +1,12 @@
 ruby:
   devices_type_class = ''
   devices_type_class += 'smartphone' if defined?(smartphone)
-  devices_type_class += 'tablet' if defined?(tablet)
+  if defined?(tablet)
+    tablet = [tablet] unless tablet.is_a?(Array)
+    tablet.each do |t|
+      devices_type_class += 'tablet'
+    end
+  end
   if defined?(desktop)
     desktop = [desktop] unless desktop.is_a?(Array)
     desktop.each do |d|
@@ -11,8 +16,11 @@ ruby:
 
 
 .devices class="#{devices_type_class}"
-  = render 'shared/smartphone', content: smartphone if defined?(smartphone)
-  = render 'shared/tablet', content: tablet if defined?(tablet)
-  - if defined?(desktop)
+  - if defined?(smartphone) && !smartphone.nil? && !smartphone.blank?
+    = render 'shared/smartphone', content: smartphone
+  - if defined?(tablet) && !tablet.nil? && !tablet.blank?
+    - tablet.each_with_index do |t, i|
+      = render 'shared/tablet', content: t, landscape: (i % 2 == 0)
+  - if defined?(desktop) && !desktop.nil? && !desktop.blank?
     - desktop.each do |d|
       = render 'shared/desktop', content: d

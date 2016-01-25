@@ -5,6 +5,16 @@
   .row
     .col-xs-12.col-md-6
       = render 'shared/devices',
+               tablet: [asset_path('references/photonics/tablet-1.png'),
+                        asset_path('references/photonics/tablet-2.png')]
+    .col-xs-12.col-md-6
+      h3
+        = t('references.photonics.title')
+      p
+        = t('references.photonics.content')
+  .row
+    .col-xs-12.col-md-6
+      = render 'shared/devices',
                smartphone: asset_path('references/wiwo-guide/smartphone.png'),
                tablet: asset_path('references/wiwo-guide/tablet.png'),
                desktop: asset_path('references/wiwo-guide/desktop.png')

@@ -157,27 +157,39 @@
     }
 
     .ipad {
-      top: -217px;
-      right: -388px;
+      top: -245px;
+      left: -363px;
       z-index: 1;
-      transform: scale(0.15);
+      transform: scale(0.2);
 
       @media (min-width: $screen-sm-min) {
         top: -121px;
         right: -316px;
-        transform: scale(0.3);
+        transform: scale(0.35);
       }
 
       @media (min-width: $screen-md-min) {
         top: -151px;
         right: -339px;
-        transform: scale(0.25);
+        transform: scale(0.3);
       }
 
       @media (min-width: $screen-lg-min) {
         top: -120px;
         right: -316px;
-        transform: scale(0.3);
+        transform: scale(0.35);
+      }
+    }
+
+    .ipad:nth-of-type(2) {
+      top: -438px;
+      right: -235px;
+      left: auto;
+      z-index: 0;
+
+      @media (min-width: $screen-sm-min) {
+        top: -355px;
+        left: 198px;
       }
     }
   }

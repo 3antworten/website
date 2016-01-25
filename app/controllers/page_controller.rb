@@ -3,7 +3,10 @@ class PageController < ApplicationController
 
   # GET /page
   def show
+    require 'date'
     require 'fastimage'
+
+    @current_year = Date.today.strftime("%Y")
     background_image_path = "#{Rails.root}/app/assets/images/hero-background.jpg"
     @background_image_size = FastImage.size(background_image_path)
   end

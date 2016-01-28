@@ -141,6 +141,69 @@
     }
   }
 
+  &.tablettablet {
+    height: 144px;
+
+    @media (min-width: $screen-sm-min) {
+      height: 287px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      height: 240px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 287px;
+    }
+
+    .ipad {
+      top: -245px;
+      left: -363px;
+      z-index: 1;
+      transform: scale(0.2);
+
+      @media (min-width: $screen-sm-min) {
+        top: -137px;
+        left: -215px;
+        transform: scale(0.35);
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -167px;
+        left: -317px;
+        transform: scale(0.3);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -136px;
+        left: -283px;
+        transform: scale(0.35);
+      }
+    }
+
+    .ipad:nth-of-type(2) {
+      top: -438px;
+      right: -235px;
+      left: auto;
+      z-index: 0;
+
+      @media (min-width: $screen-sm-min) {
+        top: -354px;
+        left: 198px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        top: -376px;
+        left: 48px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        top: -353px;
+        left: 131px;
+      }
+    }
+  }
+
   &.tabletdesktopdesktop {
     height: 107px;
 

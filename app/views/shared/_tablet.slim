@@ -1,7 +1,9 @@
 ruby:
   style = ''
   style = "background-image: url(#{content});" if defined?(content)
-.marvel-device.ipad.black.landscape
+  landscape = 'landscape' if defined?(landscape) && landscape
+  landscape = '' unless defined?(landscape) && landscape
+.marvel-device.ipad.black class="#{landscape}"
   .camera
   .screen style="#{style}"
   .home

@@ -14,6 +14,7 @@ stages:
   - linting
   - code_analysis
   - testing
+  - mirror
   - deployment
 
 code_analysis_job:
@@ -30,6 +31,11 @@ test_job:
   stage: testing
   script:
     - bin/test
+
+mirror_job:
+  stage: mirror
+  script:
+    - bin/mirror
 
 deployment_job:
   stage: deployment

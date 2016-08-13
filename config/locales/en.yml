@@ -52,6 +52,13 @@ en:
         security. An end-to-end encryption starting with the user's input and ending
         at the server's side was implemented to protect sensitive data.
       title: Camel Festival Data Collection
+    dalphi:
+      content: DALPHI - DALPHI Active Learning Platform for Human Interaction is developed
+        by 3antworten in cooperation with Implisense, Berlin's leading Business Intelligence
+        Start-Up. DALPHI makes it easy and productive again to connect Machine Learning
+        services and annotate given data for them. 3antworten love OpenSource Software,
+        that's why this application is fully open for all data scientists out there.
+      title: DALPHI
     floodfill:
       content: For the German Camel consumer platform 3antworten have developed a
         web app game for smartphones, tablets and desktop computers. The goal of the
@@ -79,7 +86,14 @@ en:
         communication flow.
       title: Live Academy
     photonics:
-      content: "Golden Section Graphics GmbH, a Berlin based agency leading the European infographics business, teamed up with 3antworten to develop a multilingual, educating and easy to use spot on the internet to teach about the science and power of light: The field of Photonics. The resulting microsite boosts the release of their Photonics book by accessing 50 of the book's infographics. 3antworten always love to make sensible use of cutting edge technology, so this project was a perfect match - in terms of state of the art science and content."
+      content: 'Golden Section Graphics GmbH, a Berlin based agency leading the European
+        infographics business, teamed up with 3antworten to develop a multilingual,
+        educating and easy to use spot on the internet to teach about the science
+        and power of light: The field of Photonics. The resulting microsite boosts
+        the release of their Photonics book by accessing 50 of the book''s infographics.
+        3antworten always love to make sensible use of cutting edge technology, so
+        this project was a perfect match - in terms of state of the art science and
+        content.'
       title: Photonics
     wiwo-guide:
       content: For BuckNovak CP PR GmbH commissioned by WirtschaftsWoche, 3antworten

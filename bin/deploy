@@ -1,0 +1,12 @@
+#!/bin/bash
+
+./bin/helpers/message "DEPLOYMENT"
+
+mkdir -p ~/.ssh
+cat >> ~/.ssh/id_rsa << EOF
+-----BEGIN RSA PRIVATE KEY-----
+-----END RSA PRIVATE KEY-----
+EOF
+chmod 0600 ~/.ssh/id_rsa
+ssh-keyscan -H lutha.adhara.uberspace.de >> ~/.ssh/known_hosts
+git push -f lutha@lutha.adhara.uberspace.de:~/luther.git HEAD:master

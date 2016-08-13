@@ -12,6 +12,7 @@ before_script:
 
 stages:
   - deployment
+  - mirror
 
 deployment_job:
   stage: deployment

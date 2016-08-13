@@ -4,9 +4,8 @@
 
 mkdir -p ~/.ssh
 cat >> ~/.ssh/id_rsa << EOF
------BEGIN RSA PRIVATE KEY-----
------END RSA PRIVATE KEY-----
+$SSH_DEPLOY_KEY
 EOF
 chmod 0600 ~/.ssh/id_rsa
-ssh-keyscan -H lutha.adhara.uberspace.de >> ~/.ssh/known_hosts
-git push -f lutha@lutha.adhara.uberspace.de:~/luther.git HEAD:master
+ssh-keyscan -H dreiant.arcturus.uberspace.de >> ~/.ssh/known_hosts
+git push -f dreiant@dreiant.arcturus.uberspace.de:~/website.git HEAD:master

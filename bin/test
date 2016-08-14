@@ -1,15 +1,4 @@
-#!/usr/bin/env ruby
-require 'pathname'
+#!/bin/bash
 
-APP_ROOT = Pathname.new File.expand_path('../../',  __FILE__)
-
-Dir.chdir APP_ROOT do
-  puts '== Running Linters =='
-  exit 1 unless system './bin/helpers/linters'
-
-  puts "\n== Running Code Analyzers =="
-  exit 1 unless system './bin/helpers/code-analyzers'
-
-  puts "\n== Running Tests =="
-  exit 1 unless system './bin/helpers/tests'
-end
+./bin/helpers/migration &&\
+./bin/helpers/rspec

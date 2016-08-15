@@ -8,4 +8,4 @@ $SSH_MIRROR_KEY
 EOF
 chmod 0600 ~/.ssh/id_rsa
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-git push --mirror git@github.com:3antworten/website.git HEAD:master
+git push --mirror git@github.com:3antworten/website.git

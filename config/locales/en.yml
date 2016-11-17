@@ -85,6 +85,9 @@ en:
         to handle the clients' wishes with an agile development process and a swift
         communication flow.
       title: Live Academy
+    luther:
+      content: 'For the 500th anniversary of Martin Luther’s 95 propositions we again teamed up with the amazing graphic artists and designers of Berlins prestigious Golden Section Graphics to present a whole new way of history content and museum presentation. The information platform we deployed serves all the key facts of Martin Luthers life, using detailed web animations and all the modern content forms imaginable - supporting all the platforms out there. View 3D scans of Luther’s assets, order them 3D printed, be guided through seven chapters of modern story telling (comics, animations and lovely detailed graphics) and get all this served by a distributed server architecture - making you not noticing the network magic that the thousands of assets need to stitch this experience together.'
+      title: 'Here I Stand - Luther Exhibition'
     photonics:
       content: 'Golden Section Graphics GmbH, a Berlin based agency leading the European
         infographics business, teamed up with 3antworten to develop a multilingual,

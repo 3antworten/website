@@ -5,6 +5,17 @@
   .row
     .col-xs-12.col-md-6
       = render 'shared/devices',
+               smartphone: asset_path('references/die-offene-gesellschaft/smartphone.png'),
+               tablet: asset_path('references/die-offene-gesellschaft/tablet.png'),
+               desktop: asset_path('references/die-offene-gesellschaft/desktop.png')
+    .col-xs-12.col-md-6
+      h3
+        = t('references.die-offene-gesellschaft.title')
+      p
+        = t('references.die-offene-gesellschaft.content')
+  .row
+    .col-xs-12.col-md-6
+      = render 'shared/devices',
                smartphone: asset_path('references/luther/smartphone.png'),
                tablet: asset_path('references/luther/tablet.png'),
                desktop: asset_path('references/luther/desktop.png')

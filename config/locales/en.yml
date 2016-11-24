@@ -23,6 +23,9 @@ en:
     Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt
     mollit anim id est laborum.
   references:
+    die-offene-gesellschaft:
+      content: In a post-fact era and after the rise of populists, Berlin's agency Lucid together with 3antworten launches a platform to "Make democracy great again". The goal is to onboard as many users as possible and spread their statements and beliefs in order to establish an exchange of political opinions. To escape filter bubbles the platform makes it easy to participate offline by organizing miscelaneous events like debates. 3antworten deeply believe in diversity, equality and freedom, therefore this platform is developed as OpenSource Software gaining as many contributors as possible.
+      title: Die Offene Gesellschaft
     bh-taxi:
       content: 3antworten have realized a web app game for Benson & Hedges. The target
         platforms are tablets and desktop devices. A taxi cab's driving direction

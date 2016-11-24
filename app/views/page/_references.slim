@@ -1,121 +1,15 @@
 .container.references#references
   .row
     .col-xs-12
-      h2.partial-heading = t('references.heading')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               smartphone: asset_path('references/die-offene-gesellschaft/smartphone.png'),
-               tablet: asset_path('references/die-offene-gesellschaft/tablet.png'),
-               desktop: asset_path('references/die-offene-gesellschaft/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.die-offene-gesellschaft.title')
-      p
-        = t('references.die-offene-gesellschaft.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               smartphone: asset_path('references/luther/smartphone.png'),
-               tablet: asset_path('references/luther/tablet.png'),
-               desktop: asset_path('references/luther/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.luther.title')
-      p
-        = t('references.luther.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               smartphone: asset_path('references/dalphi/smartphone.png'),
-               tablet: asset_path('references/dalphi/tablet.png'),
-               desktop: asset_path('references/dalphi/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.dalphi.title')
-      p
-        = t('references.dalphi.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               tablet: [asset_path('references/photonics/tablet-1.png'),
-                        asset_path('references/photonics/tablet-2.png')]
-    .col-xs-12.col-md-6
-      h3
-        = t('references.photonics.title')
-      p
-        = t('references.photonics.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               smartphone: asset_path('references/wiwo-guide/smartphone.png'),
-               tablet: asset_path('references/wiwo-guide/tablet.png'),
-               desktop: asset_path('references/wiwo-guide/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.wiwo-guide.title')
-      p
-        = t('references.wiwo-guide.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               smartphone: asset_path('references/live-academy/smartphone.png'),
-               tablet: asset_path('references/live-academy/tablet.png'),
-               desktop: asset_path('references/live-academy/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.live-academy.title')
-      p
-        = t('references.live-academy.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               smartphone: asset_path('references/liquidsquare/smartphone.png'),
-               tablet: asset_path('references/liquidsquare/tablet.png'),
-               desktop: asset_path('references/liquidsquare/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.liquidsquare.title')
-      p
-        = t('references.liquidsquare.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               desktop: asset_path('references/booklapp/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.booklapp.title')
-      p
-        = t('references.booklapp.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               tablet: asset_path('references/bh-taxi/tablet.png'),
-               desktop: asset_path('references/bh-taxi/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.bh-taxi.title')
-      p
-        = t('references.bh-taxi.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               tablet: asset_path('references/camel-festival/tablet.png'),
-               desktop: [asset_path('references/camel-festival/server.png'),
-                         asset_path('references/camel-festival/desktop.png')]
-    .col-xs-12.col-md-6
-      h3
-        = t('references.camel-festival.title')
-      p
-        = t('references.camel-festival.content')
-  .row
-    .col-xs-12.col-md-6
-      = render 'shared/devices',
-               smartphone: asset_path('references/floodfill/smartphone.png'),
-               tablet: asset_path('references/floodfill/tablet.png'),
-               desktop: asset_path('references/floodfill/desktop.png')
-    .col-xs-12.col-md-6
-      h3
-        = t('references.floodfill.title')
-      p
-        = t('references.floodfill.content')
+      h2.partial-heading = t('references-heading')
+  - t('references').each do |reference_key, reference|
+    .row
+      .col-xs-12.col-md-6
+        = render 'shared/devices',
+                 devices: reference[:devices],
+                 reference_key: reference_key
+      .col-xs-12.col-md-6
+        h3
+          = reference[:title]
+        p
+          = reference[:content]

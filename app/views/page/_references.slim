@@ -3,6 +3,7 @@
     .col-xs-12
       h2.partial-heading = t('references-heading')
   - t('references').each do |reference_key, reference|
+    - next if controller_name == 'page' && !reference[:premium]
     .row
       .col-xs-12.col-md-6
         = render 'shared/devices',
@@ -13,3 +14,15 @@
           = reference[:title]
         p
           = reference[:content]
+        - if reference[:urls]
+          .btn-group role='group'
+            - if reference[:urls][:project]
+              a.btn.btn-default href="#{reference[:urls][:project]}" target='_blank' rel='noopener noreferrer'
+                = fa_icon 'globe'
+                | &nbsp;
+                = t('show-project')
+            - if reference[:urls][:github]
+              a.btn.btn-default href="#{reference[:urls][:github]}" target='_blank' rel='noopener noreferrer'
+                = fa_icon 'github'
+                | &nbsp;
+                = t('view-on-github')

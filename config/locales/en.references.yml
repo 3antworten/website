@@ -1,5 +1,14 @@
 en:
   references:
+    armaturenbrett:
+      content: Armaturenbrett is a beautiful full responsive uncompromising Dashboard for your metrics that matter. This dashboard is developed with performance and minimalism in mind. It has a minimal set of dependencies – no relational database needed, only a Redis. Yet it is full featured with WebSocket technology for real-time streaming your data into the UI.
+      title: Armaturenbrett
+      devices:
+        - desktop
+        - tablet
+      urls:
+        github: https://github.com/armaturenbrett/armaturenbrett
+      premium: true
     die-offene-gesellschaft:
       content: In a post-fact era and after the rise of populists, Berlin's agency Lucid together with 3antworten launches a platform to "Make democracy great again". The goal is to onboard as many users as possible and spread their statements and beliefs in order to establish an exchange of political opinions. To escape filter bubbles the platform makes it easy to participate offline by organizing miscelaneous events like debates. 3antworten deeply believe in diversity, equality and freedom, therefore this platform is developed as OpenSource Software gaining as many contributors as possible.
       title: Die Offene Gesellschaft

@@ -1,26 +1,33 @@
 ruby:
+  devices = [] unless devices
   devices_type_class = ''
-  devices_type_class += 'smartphone' if defined?(smartphone)
-  if defined?(tablet)
-    tablet = [tablet] unless tablet.is_a?(Array)
-    tablet.each do |t|
+  devices_type_class += 'smartphone' if devices.include?('smartphone')
+  desktop_count = tablet_count = 0
+  devices.each do |device|
+    if device == 'tablet'
+      tablet_count += 1
       devices_type_class += 'tablet'
     end
   end
-  if defined?(desktop)
-    desktop = [desktop] unless desktop.is_a?(Array)
-    desktop.each do |d|
+  devices.each do |device|
+    if device == 'desktop'
+      desktop_count += 1
       devices_type_class += 'desktop'
     end
   end
 
-
 .devices class="#{devices_type_class}"
-  - if defined?(smartphone) && !smartphone.nil? && !smartphone.blank?
-    = render 'shared/smartphone', content: smartphone
-  - if defined?(tablet) && !tablet.nil? && !tablet.blank?
-    - tablet.each_with_index do |t, i|
-      = render 'shared/tablet', content: t, landscape: (i % 2 == 0)
-  - if defined?(desktop) && !desktop.nil? && !desktop.blank?
-    - desktop.each do |d|
-      = render 'shared/desktop', content: d
+  - if devices.include?('smartphone')
+    = render 'shared/smartphone',
+             content: asset_path("references/#{reference_key}/smartphone.png")
+  - tablet_count.times do |i|
+    - tablet_postfix = ''
+    - tablet_postfix = "-#{i + 1}" if tablet_count > 1
+    = render 'shared/tablet',
+             content: asset_path("references/#{reference_key}/tablet#{tablet_postfix}.png"),
+             landscape: (i % 2 == 0)
+  - desktop_count.times do |i|
+    - desktop_postfix = ''
+    - desktop_postfix = "-#{i + 1}" if desktop_count > 1
+    = render 'shared/desktop',
+             content: asset_path("references/#{reference_key}/desktop#{desktop_postfix}.png")

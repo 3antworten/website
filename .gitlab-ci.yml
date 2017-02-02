@@ -7,7 +7,7 @@ cache:
   key: "7a15b210162d6d1ebc242a5129a2604e"
 
 before_script:
-  - gem install bundler --no-ri --no-rdoc
+  - gem install bundler --no-ri --no-rdoc --version=1.13.7
   - RAILS_ENV=test bundle install --path vendor/
 
 stages:

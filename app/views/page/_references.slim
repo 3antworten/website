@@ -26,3 +26,8 @@
                 = fa_icon 'github'
                 | &nbsp;
                 = t('view-on-github')
+      .col-xs-12
+        .technologies
+          - if reference[:technologies]
+            - reference[:technologies].each do |technology|
+              img src="#{asset_path("technology-icons/#{technology}.svg")}" alt="#{t("technologies.#{technology}")}" title="#{t("technologies.#{technology}")}"

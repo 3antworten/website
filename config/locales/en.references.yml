@@ -9,6 +9,13 @@ en:
       urls:
         github: https://github.com/armaturenbrett/armaturenbrett
       premium: true
+      technologies:
+        - html5
+        - css3
+        - coffeescript
+        - jquery
+        - rails
+        - redis
     die-offene-gesellschaft:
       content: In a post-fact era and after the rise of populists, Berlin's agency Lucid together with 3antworten launches a platform to "Make democracy great again". The goal is to onboard as many users as possible and spread their statements and beliefs in order to establish an exchange of political opinions. To escape filter bubbles the platform makes it easy to participate offline by organizing miscelaneous events like debates. 3antworten deeply believe in diversity, equality and freedom, therefore this platform is developed as OpenSource Software gaining as many contributors as possible.
       title: Die Offene Gesellschaft
@@ -20,6 +27,14 @@ en:
         github: https://github.com/die-offene-gesellschaft/platform
         project: https://die-offene-gesellschaft.de
       premium: true
+      technologies:
+        - html5
+        - css3
+        - coffeescript
+        - jquery
+        - rails
+        - mysql
+        - cloudfront
     luther:
       content: For the 500th anniversary of Martin Luther's 95 propositions 3antworten again teamed up with the amazing graphic artists and designers of Berlin's prestigious Golden Section Graphics to present a whole new kind of history content and museum presentation.
         The international platform 3antworten deployed serves all the key facts of Martin Luther's life, using detailed web animations and all the modern content forms imaginable - supporting all the platforms out there.
@@ -33,6 +48,15 @@ en:
       urls:
         project: http://here-i-stand.com
       premium: true
+      technologies:
+        - html5
+        - css3
+        - coffeescript
+        - javascript
+        - jquery
+        - rails
+        - mysql
+        - cloudfront
     dalphi:
       content: DALPHI - DALPHI Active Learning Platform for Human Interaction is developed
         by 3antworten in cooperation with Implisense, Berlin's leading Business Intelligence
@@ -47,6 +71,15 @@ en:
       urls:
         github: https://github.com/dalphi/dalphi
       premium: true
+      technologies:
+        - html5
+        - css3
+        - coffeescript
+        - jquery
+        - rails
+        - postgresql
+        - redis
+        - docker
     photonics:
       content: 'Golden Section Graphics GmbH, a Berlin based agency leading the European
         infographics business, teamed up with 3antworten to develop a multilingual,
@@ -63,6 +96,11 @@ en:
       urls:
         project: http://www.photonics-infographics.com
       premium: true
+      technologies:
+        - html5
+        - css3
+        - javascript
+        - jquery
     wiwo-guide:
       content: For BuckNovak CP PR GmbH commissioned by WirtschaftsWoche, 3antworten
         have built a highly individual customer relationship management system. It
@@ -78,6 +116,13 @@ en:
         - smartphone
         - tablet
       premium: true
+      technologies:
+        - html5
+        - css3
+        - coffeescript
+        - jquery
+        - rails
+        - mysql
     live-academy:
       content: The live-academy website was designed and implemented entirely by 3antworten.
         Besides the fully mobile first and responsive approach a custom content management
@@ -91,6 +136,14 @@ en:
         - tablet
       urls:
         project: http://organisationsberatung.susanne-kleinhenz.com
+      technologies:
+        - html5
+        - css3
+        - coffeescript
+        - javascript
+        - jquery
+        - rails
+        - mysql
     liquidsquare:
       content: Liquidsquare is an order management tool for restaurateurs to communicate
         with their wholesalers. 3antworten bootstrapped the prototype for the minimum
@@ -106,6 +159,17 @@ en:
         - smartphone
         - tablet
       premium: true
+      technologies:
+        - html5
+        - css3
+        - coffeescript
+        - javascript
+        - jquery
+        - rails
+        - postgresql
+        - redis
+        - elasticsearch
+        - cloudfront
     booklapp:
       content: Booklapp is a web application developed by 3antworten. The app allows
         designing a tablet app with content coming from PDF files. These files can
@@ -117,6 +181,14 @@ en:
       devices:
         - desktop
       premium: true
+      technologies:
+        - html5
+        - css3
+        - javascript
+        - jquery
+        - rails
+        - postgresql
+        - fabric
     bh-taxi:
       content: 3antworten have realized a web app game for Benson & Hedges. The target
         platforms are tablets and desktop devices. A taxi cab's driving direction
@@ -127,6 +199,11 @@ en:
       devices:
         - desktop
         - tablet
+      technologies:
+        - html5
+        - css3
+        - javascript
+        - jquery
     camel-festival:
       content: For Camel's promotional campaigns on festivals, 3antworten have implemented
         a system to onboard new users to the digital Camel community. The system consists
@@ -145,6 +222,12 @@ en:
         - desktop
         - desktop
         - tablet
+      technologies:
+        - html5
+        - css3
+        - javascript
+        - jquery
+        - php
     floodfill:
       content: For the German Camel consumer platform 3antworten have developed a
         web app game for smartphones, tablets and desktop computers. The goal of the
@@ -157,3 +240,8 @@ en:
         - desktop
         - tablet
         - smartphone
+      technologies:
+        - html5
+        - css3
+        - javascript
+        - jquery

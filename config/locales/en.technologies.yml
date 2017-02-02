@@ -1,0 +1,16 @@
+en:
+  technologies:
+    cloudfront: Amazon CloudFront
+    coffeescript: CoffeeScript
+    css3: CSS3
+    docker: Docker
+    elasticsearch: Elasticsearch
+    fabric: Fabric
+    html5: HTML5
+    javascript: JavaScript
+    jquery: jQuery
+    mysql: MySQL
+    php: PHP
+    postgresql: PostgreSQL
+    rails: Ruby on Rails
+    redis: Redis

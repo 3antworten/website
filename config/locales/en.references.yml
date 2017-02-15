@@ -1,5 +1,22 @@
 en:
   references:
+    bucknovak-cloud:
+      content: The BuckNovak Cloud is a branded Nextcloud setup for BuckNovak CP PR GmbH customized and maintained by 3antworten. It allows BuckNovak to easily exchange a big amount of data with their clients while preserving the maximal control over the data. 3antworten always prefer solutions which respect the freedom of the users and using Nextcloud for this data exchange scenario provides the best privacy policies. Because it is OpenSource Software it was easy to implement BuckNovak's corporate identity.
+      title: BuckNovak Cloud
+      devices:
+        - desktop
+        - tablet
+        - smartphone
+      urls:
+        project: https://cloud.bucknovak.de
+      premium: true
+      technologies:
+        - html5
+        - css3
+        - javascript
+        - jquery
+        - php
+        - mysql
     armaturenbrett:
       content: Armaturenbrett is a beautiful full responsive uncompromising Dashboard for your metrics that matter. This dashboard is developed with performance and minimalism in mind. It has a minimal set of dependencies – no relational database needed, only a Redis. Yet it is full featured with WebSocket technology for real-time streaming your data into the UI.
       title: Armaturenbrett
